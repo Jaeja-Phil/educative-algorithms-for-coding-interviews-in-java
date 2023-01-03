@@ -48,5 +48,13 @@ public class $02_TimeComplexityOfAnAlgorithmWithNestedLoop {
          * = 3 + 6n + 4 + 9nm + 4n + 2
          * = 9nm + 10n + 9
          */
+
+        int var = 1;
+        while(var < n) {
+            for (int j = 0; j < var; j++) {
+                sum++;
+            }
+            var *= 2;
+        }
     }
 }
